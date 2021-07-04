@@ -3,7 +3,7 @@ const request = require('request');
 const fs = require('fs');
 const writestream = fs.createWriteStream('projectdetails.csv');
 // write header
-writestream.write(`title,link,paragraph\n`);
+writestream.write(`Title,Link,Paragraph\n`);
 
 request('https://Blog.mohammedkaif0.repl.co',(error,response,html)=>{
      if(!error&&response.statusCode==200){
